@@ -1,0 +1,74 @@
+<html lang="en" ng-app="Admin_Menu_App">
+<head>
+    <title>
+        The Parts App
+        (Admin Menu)        
+    </title>
+    <script src="./vendor/angularjs/angularjs.js"></script>
+    <script src="./src/scripts/admin_menu.js"></script>
+</head>
+<body ng-controller="Admin_Menu_Ctrlr">
+    <br/>
+    <table align="center">
+    <thead>
+        <tr>
+            <th>
+                {{ x }}
+                <u><h2>Admin Menu</h2></u>
+                <br/>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                        <a href="{{ url }}/Materials">
+                            Materials
+                        </a>
+                        <br/><br/>
+                    </li>
+                    <li>
+                        <a href="{{ url }}/MaterialTypes">
+                            Material Types
+                        </a>
+                        <br/><br/>
+                    </li>
+                    <li>
+                        <a href="{{ url }}/Companies">
+                            Companies
+                        </a>
+                        <br/><br/>
+                    </li>
+                    <li>
+                        <a href="{{ url }}/Departments">
+                            Departments
+                        </a>
+                        <br/><br/>
+                    </li>
+                    <li>
+                        <a href="{{ url }}/Employees">
+                            Employees
+                        </a>
+                        <br/><br/>
+                    </li>
+                    <li>
+                        <a href="{{ url }}/StageHeadings">
+                            Stage Headings
+                        </a>
+                        <br/><br/>
+                    </li>
+                    <li>
+                        <a href="{{ url }}/Vendors">
+                            Vendors
+                        </a>
+                        <br/>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>
